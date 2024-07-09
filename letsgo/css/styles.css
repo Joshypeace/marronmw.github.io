@@ -1,0 +1,165 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*COLOR PALLETE*/
+:root {
+  --black: #0c0c0c;
+  --blue: #18bef0;
+  --white: #fbfaff;
+  --gray: #ccc;
+}
+body {
+  font-family: "Monserrat", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/*HEADINGS*/
+.heading {
+  text-transform: capitalize;
+}
+.small {
+  text-transform: lowercase;
+  font-weight: 600;
+}
+.company-name {
+  color: var(--blue);
+}
+
+.hero-section {
+  background: url("../images/travevl3.jpg") center center no-repeat;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero-section h1 {
+  font-size: 3em;
+  margin-bottom: 0.5em;
+}
+
+.hero-section p {
+  font-size: 1.5em;
+}
+
+.about-section,
+.services-section,
+.contact-section {
+  padding: 60px 0;
+}
+
+.services-section .col-md-4 {
+  padding: 20px 0;
+}
+
+.contact-section form {
+  max-width: 600px;
+  margin: auto;
+}
+@media screen and (min-width: 1024px) {
+  .hero-section {
+    height: 60dvh;
+  }
+  .hero-section h1 {
+    font-size: 5rem;
+  }
+}
+
+/*INPUTS*/
+.form-control {
+  border: 2px solid var(--blue) !important;
+}
+
+/*IMAGES*/
+.swiper-slide {
+  height: 10rem;
+  overflow: hidden;
+}
+
+@media screen and (min-width: 1024px) {
+  .swiper-slide {
+    height: 20rem;
+  }
+}
+
+.img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+/*NAVIGATION*/
+.nav-link {
+  font-weight: 600;
+  color: var(--blue) !important;
+}
+.nav-link:hover {
+  color: var(--blue) !important;
+  font-size: larger;
+  transition: all 0.3s;
+}
+
+/*BUTTONS*/
+.btn {
+  outline: 0 !important;
+  border: none !important;
+}
+/*SECTIONS*/
+.about-section {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: url("images/travevl3.png");
+}
+.services-section {
+  background: #f7fcfd;
+}
+@media screen and (max-width: 600px) {
+  .about-section {
+    display: none;
+  }
+  #about:target {
+    display: block;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .about-section {
+    display: none;
+  }
+  #about:target {
+    display: block;
+  }
+}
+
+/*COLORS*/
+.blue {
+  color: var(--blue);
+}
+.black {
+  color: var(--black);
+}
+.white {
+  color: var(--white);
+}
+.gray {
+  color: var(--gray);
+}
+
+.bg-blue {
+  background: var(--blue);
+}
+.bg-black {
+  background: var(--black);
+}
+.bg-white {
+  background: var(--white);
+}
+.bg-gray {
+  background: var(--gray);
+}
