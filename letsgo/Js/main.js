@@ -1,6 +1,4 @@
-
 // show/ faq answer
-
 const faq = document.querySelectorAll(".faq");
 
 faq.forEach((faq) => {
@@ -17,18 +15,17 @@ faq.forEach((faq) => {
 });
 
 var swiper = new Swiper(".mySwiper", {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
+  },
+  //when window is 600px
+
+  breakpoints: {
+    600: {
+      slidesPerView: 2,
     },
-    //when window is 600px
-
-    breakpoints:{
-        600 :{
-            slidesPerView: 2
-        }
-    }
-  });
-
+  },
+});
